@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <title>CSS Encoding 401 Reproduction</title>
+  </head>
+  <body>
+    <h1>CSS Encoding 401 Reproduction</h1>
+    <div id="loading">Loading...</div>
+    <div id="guest" hidden>
+        <p>In order to reproduce the problem, you need to log in first:</p>
+        <form id="login-form">
+            <input name="url" placeholder="Server url">
+            <button type="button">Log in</button>
+        </form>
+    </div>
+    <div id="logged-in" hidden>
+        <p>Click one of following buttons and inspect the network:</p>
+        <button type="button" id="test-japanese">Test with "行くぞ"</button>
+        <button type="button" id="test-english">Test with "Testing"</button>
+        <p>This should create a document and then retrieve it, but it seems to be returning 401 for the version with Japanese text (only using in-memory storage).</p>
+        <p>The code can be found in the <code>test</code> function in the <code>main.js</code> file, and the issue can be reproduced with <a href="https://cypress.com" target="_blank">Cypress</a> running <code>npm run cy:dev</code> to open an interactive browser.</p>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
