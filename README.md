@@ -1,6 +1,6 @@
 # Reproductions
 
-This repository contains [minimal reproductions](https://stackoverflow.com/help/minimal-reproducible-example) to issues I've found. In particular, this branch reproduces a bug with [Rolldown](https://rolldown.rs/) building CJS output.
+This repository contains [minimal reproductions](https://stackoverflow.com/help/minimal-reproducible-example) to issues I've found. In particular, this branch reproduces a bug with [Rolldown](https://rolldown.rs/) building CJS output: [#10011](https://github.com/rolldown/rolldown/issues/10011)
 
 It can be reproduced with the following commands:
 
