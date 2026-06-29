@@ -1,0 +1,13 @@
+{
+  "name": "rolldown-cjs",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "check": "node --check dist/index.js"
+  },
+  "devDependencies": {
+    "vite": "8.1.0"
+  },
+  "packageManager": "pnpm@11.9.0"
+}
